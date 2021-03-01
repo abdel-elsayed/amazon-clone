@@ -1,7 +1,7 @@
 import React from "react";
 import "./Home.css";
-import MyCarousel from "./Carousel";
-import Product from "./Product";
+import MyCarousel from "../../components/carousel/Carousel";
+import Product from "../../components/product/Product";
 
 function Home() {
   return (
