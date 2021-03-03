@@ -27,7 +27,6 @@ function Header() {
 
       <div className="header__search">
         <input className="header__searchInput" type="text" />
-
         <SearchIcon className="header__searchIcon" />
       </div>
 
@@ -51,7 +50,13 @@ function Header() {
           <span className="header__optionLineTwo">Prime</span>
         </div>
         <Link to="/checkout">
-          <div className="header__optionBasket">
+          <div
+            className={
+              basket && basket.length >= 1
+                ? "header__optionBasket2"
+                : "header__optionBasket"
+            }
+          >
             <ShoppingBasketIcon />
             <span className="header__optionLineTwo header__basketCount">
               {basket?.length}

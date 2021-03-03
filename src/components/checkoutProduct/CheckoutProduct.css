@@ -2,7 +2,6 @@
   display: flex;
   margin-top: 20px;
   margin-bottom: 20px;
-
   padding: 1rem;
   max-width: 70rem;
   -webkit-box-shadow: 3px 3px 5px 6px #ccc; /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
@@ -35,4 +34,10 @@
 .checkoutProduct__title {
   font-size: 17px;
   font-weight: 800;
+}
+
+@media screen and (max-width: 800px) {
+  .checkoutProduct {
+    display: block;
+  }
 }
